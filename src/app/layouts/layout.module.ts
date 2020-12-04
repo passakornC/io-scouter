@@ -5,8 +5,6 @@ import {RouterModule} from '@angular/router';
 import {BrowserModule} from '@angular/platform-browser';
 import { HeaderComponent } from './header/header.component';
 
-
-
 @NgModule({
   declarations: [
     LayoutComponent,
@@ -15,7 +13,7 @@ import { HeaderComponent } from './header/header.component';
   imports: [
     BrowserModule,
     CommonModule,
-    RouterModule
+    RouterModule,
   ]
 })
 export class LayoutModule { }

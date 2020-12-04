@@ -3,6 +3,9 @@ import {CommonModule} from '@angular/common';
 
 import {InputPageRoutingModule} from './input-page-routing.module';
 import {InputPageComponent} from './input-page/input-page.component';
+import {CardModule} from 'primeng/card';
+import {PagesModule} from '../pages.module';
+import {ComponentsModule} from '../../components/components.module';
 
 
 @NgModule({
@@ -11,7 +14,10 @@ import {InputPageComponent} from './input-page/input-page.component';
   ],
   imports: [
     CommonModule,
-    InputPageRoutingModule
+    InputPageRoutingModule,
+    CardModule,
+    PagesModule,
+    ComponentsModule
   ]
 })
 export class InputPageModule {

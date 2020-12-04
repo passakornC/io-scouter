@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./input-page.component.css']
 })
 export class InputPageComponent implements OnInit {
+  bg = 'background: blue;';
 
   constructor() { }
 
