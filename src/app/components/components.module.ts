@@ -5,22 +5,27 @@ import {HeaderComponent} from './header/header.component';
 import {InputTextModule} from 'primeng/inputtext';
 import {ButtonModule} from 'primeng/button';
 import {ReactiveFormsModule} from '@angular/forms';
+import { OutputComponent } from './output/output.component';
+import {ChartModule} from 'primeng/chart';
 
 
 @NgModule({
   declarations: [
     InputComponent,
     HeaderComponent,
+    OutputComponent
   ],
   exports: [
     InputComponent,
     HeaderComponent,
+    OutputComponent
   ],
   imports: [
     CommonModule,
     InputTextModule,
     ButtonModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ChartModule
   ]
 })
 export class ComponentsModule {

@@ -3,5 +3,10 @@
 }
 
 .my-content-container {
-  margin-top: 80px;
+  margin-top: 50px;
+}
+
+.my-card-container {
+  width: 90%;
+  max-width: 500px;
 }
