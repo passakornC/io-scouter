@@ -1,1 +1,11 @@
+<form [formGroup]="form" (ngSubmit)="check()">
+  <span class="p-float-label">
+    <input id="text-input" pInputText class="p-inputtext-lg" formControlName="textInput"/>
+    <label for="text-input">คำที่ต้องการตรวจสอบ</label>
+  </span>
+  <small id="username-help">ใส่คำที่ต้องการตรวจสอบ เช่น บักตู่, ไอทอน</small>
 
+  <div class="p-d-flex p-jc-center">
+    <button class="p-button p-mt-3" pButton type="submit" label="CHECK"></button>
+  </div>
+</form>
