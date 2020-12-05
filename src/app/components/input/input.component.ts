@@ -3,6 +3,7 @@ import {FormBuilder} from '@angular/forms';
 import {HttpService} from '../../services/http.service';
 import {EventEmitter} from 'events';
 import {Observable} from 'rxjs';
+import {MessageService} from '../../services/message.service';
 
 @Component({
   selector: 'app-input',
@@ -11,11 +12,10 @@ import {Observable} from 'rxjs';
 })
 export class InputComponent implements OnInit {
 
-  @Output()
-  eventEmitter = new EventEmitter<Observable<any>>();
-
   constructor(private fb: FormBuilder,
-              private httpService: HttpService) { }
+              private httpService: HttpService,
+              private messageService: MessageService) {
+  }
 
   form = this.fb.group({
     textInput: ['']
@@ -26,6 +26,8 @@ export class InputComponent implements OnInit {
 
   check(): void {
     const textInput = this.form.controls.textInput.value;
-    this.eventEmitter.emit(this.httpService.getIoProb(textInput));
+    this.httpService.getIoProb(textInput).subscribe(response => {
+      this.messageService.announceMessage(response);
+    });
   }
 }
