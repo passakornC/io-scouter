@@ -1,0 +1,12 @@
+.z-index-1 {
+  z-index: 1;
+}
+
+.my-content-container {
+  margin-top: 50px;
+}
+
+.my-card-container {
+  width: 90%;
+  max-width: 500px;
+}

@@ -24,7 +24,12 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeflex/primeflex.css",
+              "node_modules/primeng/resources/primeng.min.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/saga-blue/theme.css",
+              "node_modules/chart.js/dist/Chart.min.css"
             ],
             "scripts": []
           },
@@ -61,7 +66,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "io-scouter:build"
+            "browserTarget": "io-scouter:build",
+            "proxyConfig": "src/proxy.conf.json"
           },
           "configurations": {
             "production": {

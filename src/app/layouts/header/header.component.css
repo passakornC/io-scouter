@@ -1,0 +1,12 @@
+.header-img-container {
+  position: relative;
+  height: 0;
+  width: 100%;
+  padding: 0;
+  z-index: 0;
+}
+
+.header-img {
+  height: 157px;
+  width: 100%;
+}

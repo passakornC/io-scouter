@@ -1,0 +1,7 @@
+{
+  "*": {
+    "target": "http://io-scouter-api.herokuapp.com",
+    "secure": false,
+    "logLevel": "debug"
+  }
+}
